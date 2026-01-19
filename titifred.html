@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tifredelna Elite Realty | Reliable Real Estate Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; width: 60px; height: 60px; border-radius: 50px; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); z-index: 1000; transition: transform 0.3s; }
+        .whatsapp-float:hover { transform: scale(1.1); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2347086553101?text=Hello%20Tifredelna%20Elite%20Realty,%20I%20am%20interested%20in%20your%20services." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="text-blue-900 font-bold text-2xl leading-tight">
+                    TIFREDELNA <br> <span class="text-red-600 text-lg">ELITE REALTY</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8 font-semibold">
+                <a href="#home" class="hover:text-blue-900">Home</a>
+                <a href="#services" class="hover:text-blue-900">Services</a>
+                <a href="#properties" class="hover:text-blue-900">Properties</a>
+                <a href="#about" class="hover:text-blue-900">About Us</a>
+                <a href="tel:+2347086553101" class="bg-blue-900 text-white px-5 py-2 rounded-full">Call Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-gradient h-[80vh] flex items-center text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Bring Your Home To You</h1>
+            <p class="text-xl md:text-2xl mb-8 italic opacity-90">'Cause our reliability, your pride</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#properties" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-bold transition">View Properties</a>
+                <a href="https://wa.me/2347086553101" class="bg-white text-blue-900 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold transition">Contact Realtor</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Our Core Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="p-6 border rounded-xl hover:shadow-xl transition text-center">
+                    <i class="fas fa-building text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="font-bold mb-2">Property Management</h3>
+                    <p class="text-sm text-gray-600">Expert development and management services for your assets.</p>
+                </div>
+                <div class="p-6 border rounded-xl hover:shadow-xl transition text-center">
+                    <i class="fas fa-handshake text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="font-bold mb-2">Real Estate Advisory</h3>
+                    <p class="text-sm text-gray-600">Residential consultancy and strategic investment advice.</p>
+                </div>
+                <div class="p-6 border rounded-xl hover:shadow-xl transition text-center">
+                    <i class="fas fa-key text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="font-bold mb-2">Commercial Leasing</h3>
+                    <p class="text-sm text-gray-600">Tailored solutions for business spaces and commercial plots.</p>
+                </div>
+                <div class="p-6 border rounded-xl hover:shadow-xl transition text-center">
+                    <i class="fas fa-tools text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="font-bold mb-2">Construction</h3>
+                    <p class="text-sm text-gray-600">General building and professional construction services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Gallery (15 Samples) -->
+    <section id="properties" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900">Featured Properties</h2>
+                <p class="text-gray-600">Discover our latest listings for rent and sale</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="property-grid">
+                <!-- Javascript will inject 15 properties here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Founder) -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Founder" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-blue-900 mb-4">Meet Our Founder</h2>
+                    <h4 class="text-xl font-semibold text-red-600 mb-4">Fred David Ifeloluwa</h4>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        At Tifredelna Elite Realty, we understand that a home is more than just a building; it's your pride. Under the leadership of Fred David Ifeloluwa, we have built a reputation on reliability and excellence. From property search to final ownership, we deliver trusted real estate solutions across Nigeria.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>Trusted by hundreds of homeowners</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>Expertise in Delta State Property Market</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Tifredelna Elite Realty</h3>
+                <p class="opacity-75">Your premier partner in property management and real estate development in Delta State.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> No. 1, Odin Road, Ekpan, Delta State, Nigeria</p>
+                <p class="mb-2"><i class="fas fa-phone mr-2"></i> +234 708 655 3101</p>
+                <p class="mb-2"><i class="fas fa-envelope mr-2"></i> tifredelnaeliterealty@gmail.com</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2 opacity-75">
+                    <li><a href="#" class="hover:text-red-400">Available Duplexes</a></li>
+                    <li><a href="#" class="hover:text-red-400">Landed Properties for Sale</a></li>
+                    <li><a href="#" class="hover:text-red-400">2 & 3 Bedroom Flats</a></li>
+                    <li><a href="#" class="hover:text-red-400">Commercial Leasing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-blue-800 mt-12 pt-8 text-center opacity-60 text-sm">
+            &copy; 2024 Tifredelna Elite Realty. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Property Data Generation (15 items)
+        const propertyGrid = document.getElementById('property-grid');
+        const categories = [
+            "Luxury 3-Bedroom Flat", "Modern Self-Contain", "Prime Landed Property", 
+            "Executive Duplex", "2-Bedroom Apartment", "Commercial Office Space",
+            "Bedsitter Apartment", "Industrial Land", "Residential Plot", "Elite Villa"
+        ];
+        
+        const images = [
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=500&q=80",
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&q=80",
+            "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=500&q=80",
+            "https://images.unsplash.com/photo-1600607687940-4ad2364578a1?w=500&q=80",
+            "https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e?w=500&q=80",
+            "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=500&q=80"
+        ];
+
+        for (let i = 1; i <= 15; i++) {
+            const cat = categories[i % categories.length];
+            const img = images[i % images.length];
+            const type = i % 2 === 0 ? "FOR RENT" : "FOR SALE";
+            
+            propertyGrid.innerHTML += `
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group hover:shadow-2xl transition duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="${img}" alt="Property" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <span class="absolute top-4 left-4 ${type === 'FOR RENT' ? 'bg-blue-600' : 'bg-red-600'} text-white text-xs font-bold px-3 py-1 rounded">
+                            ${type}
+                        </span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-blue-900">${cat} #${i}</h3>
+                        <p class="text-gray-500 text-sm mb-4"><i class="fas fa-map-marker-alt"></i> Ekpan/Warri Region, Delta State</p>
+                        <div class="flex justify-between items-center border-t pt-4">
+                            <span class="text-blue-900 font-bold">Contact for Price</span>
+                            <a href="https://wa.me/2347086553101?text=I'm%20interested%20in%20Property%20${cat}%20#${i}" class="text-green-600 font-bold hover:underline">Enquire <i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
